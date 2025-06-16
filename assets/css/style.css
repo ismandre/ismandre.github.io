@@ -1,0 +1,19 @@
+/* ensure the avatar <a> is a circle and shows the background */
+#avatar {
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+#avatar {
+  opacity: 0;
+  transition: opacity 0.6s ease-in;
+}
+#avatar[style] {
+  /* once JS injects a style attribute, fade in */
+  opacity: 1;
+}
+
